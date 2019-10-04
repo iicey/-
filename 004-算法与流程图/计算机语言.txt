@@ -1,0 +1,11 @@
+#include <stdio.h>
+void main()
+{
+	double i;
+	printf("请输入一个数字：");
+	scanf("%lf",&i);
+	if(i>0)
+	{
+		printf("i为正数！");
+	}
+}
