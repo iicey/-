@@ -1,0 +1,36 @@
+	顺序结构，是按程序的排列顺序执行的，也就是说执行程序的时候，是依照语句
+顺序执行，一个语句接一个语句地执行，没有跳转和循环。
+	示例1:计算三角形的面积
+		#include <stdio.h>
+		#include <math.h>
+		int main()
+		{
+			float a,b,c;
+			float s,S;
+			printf("请输入三角形的三条边:");
+			scanf("%f %f %f",&a,&b,&c);
+			s=(a+b+c)/2;
+			S=(float)sqrt(s*(s-a)*(s-b)*(s-c));
+			printf("三角形的面积为:%f\n",S);
+			system("pause");
+			return 0;  
+		} 
+		
+	示例2:交换两个变量的值
+		#include <stdio.h>
+		int main()
+		{
+			int a,b,tmp;
+			printf("请输入两个整数值:");
+			scanf("%d %d",&a,&b);
+			printf("交换前:a=%d,b=%d\n",a,b);
+			tmp=a;
+			a=b;
+			b=tmp;
+			printf("交换后:a=%d,b=%d\n",a,b);
+			system("pause"); 
+			return 0;
+		}
+
+
+	
