@@ -20,12 +20,6 @@ int main(int argc,char **argv)
     char* string[]={"hello","world"};  
     printf("%c\n",tmp[0][0]); 
     printf("%s\n",tmp[0]); 
-    printf("%s\n",string[1]); 
- 
-    system("pause");  
+    printf("%s\n",string[1]);
     return 0;
 } 
-
-
-
-

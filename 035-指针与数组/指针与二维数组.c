@@ -3,7 +3,7 @@
 int main()
 {
     int sum[2][2];
-    int* p;
+    int *p;
     p=sum[0];//&sum[0]=>&sum[n]
     printf("请输入4个整型数字:");
     int i,j;
@@ -11,21 +11,20 @@ int main()
     {
          for(j=0;j<2;j++)
          {
-              //scanf("%d",sum[i]+j);  
-              scanf("%d",p++);            
+              scanf("%d",sum[i]+j);     
          }      
     }
-    p=sum[0];
-    printf("\n-----------------------\n");
-    for(i=0;i<2;i++)
+    printf("--------------\n");
+        for(i=0;i<2;i++)
     {
-          for(j=0;j<2;j++)
-          {
-              //printf("%4d",*(sum[i]+j));  
-              printf("%4d",*p++);          
-          }
-          printf("\n");          
+         for(j=0;j<2;j++)
+         {
+              printf("%d ",*(sum[i]+j));     
+//              printf("%d\n",sum[i][j]);  
+//              printf("%d\n",sum[i]+j);
+//              printf("--------------\n");
+         }      
+         printf("\n");
     }
-    system("pause");
     return 0;
 }
