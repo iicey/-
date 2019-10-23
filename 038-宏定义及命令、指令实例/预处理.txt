@@ -1,0 +1,16 @@
+使用预处理功能便于程序的修改、阅读、移植和调式，也便于实现
+模块化程序设计。
+
+1.宏定义
+	不带参数的宏定义
+	带参数的宏定义
+
+2.文件包括(#include指令)
+	#include <stdio.h>
+	#include "file.h"
+	
+3.条件编译
+	#if命令
+	#ifdef及#ifndef命令
+	#undef命令
+	#line
